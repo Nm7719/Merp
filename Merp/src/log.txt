@@ -1,0 +1,54 @@
+commit 2ccf1b52c3eb117c01b250d1c5ded616c8d3e972
+Author: Noor Mohammad <nm7719@rit.edu>
+Date:   Fri Mar 10 23:50:33 2017 -0500
+
+    Edit processors to be able to handle different print equations and white spaces
+
+commit aabf824e5297ec6d40d6508ddf96ab6c476b6780
+Author: Noor Mohammad <nm7719@rit.edu>
+Date:   Fri Mar 10 18:13:22 2017 -0500
+
+    Remove a function not used
+
+commit 913b064cc7f9be4325e1ea60e3b7453d9a3eeb22
+Author: Noor Mohammad <nm7719@rit.edu>
+Date:   Fri Mar 10 18:12:57 2017 -0500
+
+    Comment the helper function
+
+commit b5569421119c246d6b2830ef4ee1f2691e0e9111
+Author: Noor Mohammad <nm7719@rit.edu>
+Date:   Fri Mar 10 18:08:46 2017 -0500
+
+    Edit the power node and fix the mistake as well as complete equationprocessor
+    MerpTest was edited to fix a mistake caught by a student
+
+commit 234a9b1176b26109cd41a49cb5706b6e681f6911
+Author: Noor Mohammad <nm7719@rit.edu>
+Date:   Wed Mar 8 00:36:57 2017 -0500
+
+    Finish majority of the program except the conditional and iterative statements.
+
+commit 8437c3ae35d29a457d864126cce69f21b012cd44
+Author: Noor Mohammad <nm7719@rit.edu>
+Date:   Wed Mar 8 00:13:32 2017 -0500
+
+    Edit the classes and get rid of bugs
+
+commit c036911423557917d9834779fca67c0e7a43e584
+Author: Noor Mohammad <nm7719@rit.edu>
+Date:   Tue Mar 7 20:37:18 2017 -0500
+
+    Fix the node classes and finish the processor classes and test them
+
+commit bd8ff66cff94a2dd8c180a81a841673f09843b04
+Author: Noor Mohammad <nm7719@rit.edu>
+Date:   Sat Mar 4 23:07:12 2017 -0500
+
+    Complete the classes
+
+commit ec396fd4db3528271cdf1bfe73d4edeaff26ca9e
+Author: Noor Mohammad <nm7719@rit.edu>
+Date:   Sat Mar 4 21:29:57 2017 -0500
+
+    Comment and create the skeleton body of all the classes, interfaces, and enum
