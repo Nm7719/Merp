@@ -23,9 +23,13 @@ The recursive forms follow either a prefix, infix, or postfix notation: The oper
 integer-constants are in base 10 and are therefore a string of decimal digits. A leading minus sign is OK, as long as there is no space after it. Use the normal technique to convert these strings to integers when needed.
 
 The legal unary-operators:
+
    _ negation, equivalent to zero minus the expression (Note: it's the underscore character!)
+   
    @ square root
+   
    | absolute value
+  
   
 The legal binary-operators:  
  
@@ -38,6 +42,7 @@ The legal binary-operators:
   division // (dividend first)
   
   power node ^ (base first)
+
 
 Boolean Operators:
    
