@@ -28,18 +28,29 @@ The legal unary-operators:
    | absolute value
   
 The legal binary-operators:  
+ 
   addition +
+ 
   subtraction - (minuend first)
+    
   multiplication * 
+  
   division // (dividend first)
+  
   power node ^ (base first)
 
 Boolean Operators:
+   
    greater than node > 
+   
    greater than and equal to node >= 
+   
    less than node  < 
+   
    less than equal to node <= 
+   
    equal to node == 
+   
    not equal to node != 
 
 Since square root and division can create non-integer results, the actual answer will be rounded to an integer according to how your programming language normally converts double-precision floating point numbers to integers.
