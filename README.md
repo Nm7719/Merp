@@ -7,15 +7,25 @@ There is no punctuation between statements.
 Spaces are required between each element of every expression.
 Identifiers are guaranteed to begin with an alphabetic character.
 Expressions represent integer calculations. Their syntax is recursive in nature. They come in one of four forms:
+
   integer-constant
+  
   identifier 
+  
   Unary Operation:
-  unary-operator expression (Infix/Prefix)
-  expression unary-operator (PostFix)
+    
+    unary-operator expression (Infix/Prefix)
+    
+    expression unary-operator (PostFix)
+  
   Binary Operation:
-  expression1 binary-operator expression2 (Infix)
-  binary-operator expression1 expression2 (Prefix)
-  expression1 expression2 binary-operator (PostFix)
+    
+    expression1 binary-operator expression2 (Infix)
+    
+    binary-operator expression1 expression2 (Prefix)
+   
+    expression1 expression2 binary-operator (PostFix)
+
 
 Note two things:
 The first two forms are the base cases in that they identify primitive elements that cannot be broken down further.
@@ -23,40 +33,34 @@ The recursive forms follow either a prefix, infix, or postfix notation: The oper
 integer-constants are in base 10 and are therefore a string of decimal digits. A leading minus sign is OK, as long as there is no space after it. Use the normal technique to convert these strings to integers when needed.
 
 The legal unary-operators:
-
-   _ negation, equivalent to zero minus the expression (Note: it's the underscore character!)
-   
-   @ square root
-   
-   | absolute value
+     
+    _ negation, equivalent to zero minus the expression (Note: it's the underscore character!)
+    @ square root
+    | absolute value
   
   
 The legal binary-operators:  
- 
-  addition +
- 
-  subtraction - (minuend first)
     
-  multiplication * 
-  
-  division // (dividend first)
-  
-  power node ^ (base first)
+    addition +
+    subtraction - (minuend first)
+    multiplication * 
+    division // (dividend first)
+    power node ^ (base first)
 
 
 Boolean Operators:
    
-   greater than node > 
+    greater than node > 
    
-   greater than and equal to node >= 
+    greater than and equal to node >= 
    
-   less than node  < 
+    less than node  < 
    
-   less than equal to node <= 
+    less than equal to node <= 
    
-   equal to node == 
+    equal to node == 
    
-   not equal to node != 
+    not equal to node != 
 
 Since square root and division can create non-integer results, the actual answer will be rounded to an integer according to how your programming language normally converts double-precision floating point numbers to integers.
 Boolean operations typically produce a true or false value, but this violates the rules set forth in the interface. Therefore 0 is to be considered false, and anything non-zero will be consider true.
