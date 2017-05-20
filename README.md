@@ -8,23 +8,15 @@ Spaces are required between each element of every expression.
 Identifiers are guaranteed to begin with an alphabetic character.
 Expressions represent integer calculations. Their syntax is recursive in nature. They come in one of four forms:
 
-  integer-constant
-  
-  identifier 
-  
-  Unary Operation:
-    
-    unary-operator expression (Infix/Prefix)
-    
-    expression unary-operator (PostFix)
-  
-  Binary Operation:
-    
-    expression1 binary-operator expression2 (Infix)
-    
-    binary-operator expression1 expression2 (Prefix)
-   
-    expression1 expression2 binary-operator (PostFix)
+    integer-constant 
+    identifier 
+    Unary Operation:
+      unary-operator expression (Infix/Prefix)
+      expression unary-operator (PostFix)
+    Binary Operation:
+      expression1 binary-operator expression2 (Infix)
+      binary-operator expression1 expression2 (Prefix)
+      expression1 expression2 binary-operator (PostFix)
 
 
 Note two things:
@@ -68,20 +60,14 @@ Boolean operations typically produce a true or false value, but this violates th
 Process a program written in a very basic programming language, MPL (Merp Programming Language). The program will be a series of statements that need to be executed. These statements can change the state of the machine, ie change variables.
 
 It can do the following things:
-
-  exp: evaluate the expression exp. Expressions can contain variables, numbers, and operators. A Merp Processor will be used to evaluate   expression.
-  
-  print( exp ): print the value of the expression exp.
-  
-  printVars(): will print the current list of variables and thier values. This is done by using the SymbolTable's dump() function.
-  
-  VAR = exp: assign the value of exp to the variable VAR. The Symbol Table for the program will be updated.
- 
-  statement: a statement can be an expression, assignment, or print statement.
-  
-  if( cond, statement1, statement2 ): if statement where cond is the condition to evaluate. If cond is non-zero statement is evaluated,   otherwise statement2 is evaluated.
-  
-  while( cond, statement1; statement2; ..., statementN ): while loop where cond is the condition to continue the loop. statement1;         statement2; ..., statmentN is a list of statements to run for each iteration of the loop. Notice they are semicolon seperated.
+    
+    exp: evaluate the expression exp. Expressions can contain variables, numbers, and operators. A Merp Processor will be used to evaluate expression.
+    print( exp ): print the value of the expression exp.
+    printVars(): will print the current list of variables and thier values. This is done by using the SymbolTable's dump() function.
+    VAR = exp: assign the value of exp to the variable VAR. The Symbol Table for the program will be updated.
+    statement: a statement can be an expression, assignment, or print statement.
+    if( cond, statement1, statement2 ): if statement where cond is the condition to evaluate. If cond is non-zero statement is evaluated, otherwise statement2 is evaluated.
+    while( cond, statement1; statement2; ..., statementN ): while loop where cond is the condition to continue the loop. statement1;         statement2; ..., statmentN is a list of statements to run for each iteration of the loop. Notice they are semicolon seperated.
 
 Things to note:
 Loops and ifs cannot be nested inside of each other. This means no ifs in ifs, no ifs in whiles, not whiles in ifs, and no whiles in whiles.
@@ -103,4 +89,3 @@ Any combination of variables, operators, and numbers can exist on the right-hand
 The usage of an unassigned variable results in an error.
 Variables can be reassigned, even after they have already been used.
 If, while, and print statements return nothing. Therefore cannot be assigned to variables.
-
