@@ -21,24 +21,36 @@ Note two things:
 The first two forms are the base cases in that they identify primitive elements that cannot be broken down further.
 The recursive forms follow either a prefix, infix, or postfix notation: The operator comes first, in between, or after the expressions.
 integer-constants are in base 10 and are therefore a string of decimal digits. A leading minus sign is OK, as long as there is no space after it. Use the normal technique to convert these strings to integers when needed.
-The legal unary-operators are
 
+The legal unary-operators:
   _ negation, equivalent to zero minus the expression (Note: it's the underscore character!)
+  
   @ square root
+  
   | absolute value
   
-The legal binary-operators are
+The legal binary-operators:  
   + addition
+  
   - subtraction, minuend first
+  
   * multiplication
+  
   // division, dividend first
-  ^ power node, base first, power second
-  Boolean Operators
+  
+  ^ power node, base first
+
+Boolean Operators:
   > greater than node
+  
   >= greater than and equal to node
+  
   < less than node
+  
   <= less than equal to node
+  
   == equal to node
+  
   != not equal to node
 
 Since square root and division can create non-integer results, the actual answer will be rounded to an integer according to how your programming language normally converts double-precision floating point numbers to integers.
